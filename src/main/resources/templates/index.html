@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorator="layout/layout">
+<html lang="eng" ng-app="appADExtreme">
     <head>
-        <title>.:: ad-extreme ::. - index</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title>Ad Extreme</title>
+        <div ng-include="'/html/header'"></div>
+
+        <!---->
+
+
+
+
+
+
+        <script src="./js/frameworks/angular.js"></script>
+        <script src="./js/frameworks/angular-route.js"></script>
+        <script src="./js/frameworks/jquerry.js"></script>
+        <script src="./js/frameworks/bootstrap.js"></script>
+        <script src="./js/app.js"></script>
+
+        <script src="./js/controllers/advertising_controller.js"></script>
+        <script src="./js/controllers/user_controller.js"></script>
+        <script src="./js/services/advertising_service.js"></script>
+        <script src="./js/services/user_service.js"></script>
+
+        <!---->
+
+
     </head>
-    <th:block layout:fragment="conteudo">
-        <!-- init jumbotron -->
-        <div class="container">
-            <div class="jumbotron">
-                <div class="container">
-                    <h1><i class="fa fa-usd" aria-hidden="true"></i> ad-extreme</h1>
-                    <p>Negociar é nosso lema !!</p>
-                </div>
-            </div>
+    <body ng-controller="AdvertisingController">
+
+        <h1>Eh nois</h1>
+        <h1>{{app}}</h1>
+        <p>Negociar é nosso lema !!</p>
+
+        <a href="ad/advertising_list.html">adList</a>
+
+        <div class="jumbotron">
+
+
+
+
         </div>
-        <!-- end jumbotron -->
-    </th:block>
+
+    </body>
+
+    <footer ng-include="'/html/footer'"></footer>
 </html>
